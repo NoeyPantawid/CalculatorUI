@@ -6,7 +6,7 @@ from Ncal import Ui_MainWindow
 import sys
 
 class Calculator(QtWidgets.QMainWindow, Ui_MainWindow):
-    #!อย่ายุ่งกับส่วนนี้
+    #!Don't know how it works so don't touch anything
     def __init__(self):
         super(Calculator, self).__init__()
 
