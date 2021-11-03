@@ -28,7 +28,7 @@ class Calculator(QtWidgets.QMainWindow, Ui_MainWindow):
         self.uif.MyTitle.mouseMoveEvent = moveWindow
     #!~~~~~~~~~~~~~~~~
 
-        #ปุ่มย่อและปิด
+        #minimize and close
         self.uif.minimize.pressed.connect(self.btn_minimize)
         self.uif.xXx.pressed.connect(self.btn_exit)
 
