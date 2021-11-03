@@ -40,7 +40,7 @@ class Calculator(QtWidgets.QMainWindow, Ui_MainWindow):
         self.uif.plus.pressed.connect(self.btn_plus)
         self.uif.ans.pressed.connect(self.btn_ans)
 
-        #ปุ่มตัวเลข
+        #Number button
         self.uif.nine.pressed.connect(self.btn_nine)
         self.uif.eight.pressed.connect(self.btn_eight)
         self.uif.seven.pressed.connect(self.btn_seven)
