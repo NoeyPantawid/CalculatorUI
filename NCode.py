@@ -10,21 +10,21 @@ class Calculator(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(Calculator, self).__init__()
 
-        #ซ่อน title bar
+        #Hide title bar
         self.setWindowFlag(Qt.FramelessWindowHint)
 
         self.uif = Ui_MainWindow()
         self.uif.setupUi(self)
         self.uif.OutP.setAlignment(Qt.AlignRight)
         
-        #เลื่อนหน้าต่าง
+        #Move Window
         def moveWindow(event):
             if event.buttons() == Qt.LeftButton:
                 self.move(self.pos() + event.globalPos() - self.dragPos)
                 self.dragPos = event.globalPos()
                 event.accept()
 
-        # ตั้ง Title bar
+        # Title bar
         self.uif.MyTitle.mouseMoveEvent = moveWindow
     #!~~~~~~~~~~~~~~~~
 
